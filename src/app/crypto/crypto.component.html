@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row" style="padding-top: 200px;">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label>Şifrelenecek Metin</label>
+          <textarea  type="text" class="form-control" name="input" [(ngModel)]="input" style="height: 150px;" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label >Anahtar</label>
+          <input  type="number" class="form-control" name="key" [(ngModel)]="key"   placeholder="Sadece Sayı Olabilir.!" min="1" max="28" required>
+        </div>
+        <div>
+          <button type="submit" (click)="sifrele(input,key)" class="btn btn-primary">Gönder</button>
+
+        </div>
+        <hr>
+
+        <div class="form-group">
+          <label >Şifrelenmiş Metin</label>
+          <textarea  name="sendStringText" class="form-control"  style="height: 150px;"  rows="3">{{sendStringText}}</textarea>
+        </div>
+
+      </form>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label>Çözülecek Metin</label>
+          <textarea  type="text" class="form-control" name="input2" [(ngModel)]="input2" style="height: 150px;" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label >Anahtar</label>
+          <input  type="number" class="form-control" name="key2" [(ngModel)]="key2"   placeholder="Sadece Sayı Olabilir.!" min="1" max="28" required>
+        </div>
+        <div>
+          <button type="submit" (click)="sifrecoz(input2,key2)" class="btn btn-primary">Gönder</button>
+
+        </div>
+        <hr>
+
+        <div class="form-group">
+          <label >Orjinal Metin</label>
+          <textarea  name="sendStringText" class="form-control"  style="height: 150px;"  rows="3">{{sendStringText2}}</textarea>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
