@@ -13,7 +13,6 @@ Harfler Json server kullanılarak data.js dosyası üzerinden çekilmiştir. Por
 
 Bir servis düzenleyip model dosyası üzerinden gelen jsonserver api'den harfler ve sayı karşılıkları class üzerinden alınmıştır.
 
-#Process
-İşlemler crypto dosyası içerisinde gerçekleşmektedir.
+İşlemler src/app/crypto dosyası içerisinde gerçekleşmektedir.
 
 
